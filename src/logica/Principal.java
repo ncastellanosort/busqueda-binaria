@@ -52,7 +52,7 @@ public class Principal {
 
                 case 4:
                     System.out.println("\nElementos:\n");
-                    procesosLista.mostarLista();
+//                    procesosLista.mostarLista();
                    
                     break;
 

@@ -49,7 +49,7 @@ public class Lista {
 
         for (int i = 0; i < lista.length; ++i) {
 
-            lista[i] = random.nextInt(0,tamano);
+            lista[i] = (int) (Math.random() * tamano);
 
         }
 
@@ -61,8 +61,6 @@ public class Lista {
 
     public void seleccionarElemento() {
         int elem = Integer.parseInt(JOptionPane.showInputDialog(null, "Indique el elemento a buscar: "));
-
-        setElem(elem);
 
         long inicio = System.currentTimeMillis();
         long end = System.currentTimeMillis();
@@ -80,11 +78,5 @@ public class Lista {
 
     }
 
-    public void mostarLista() {
-        for (int numero : lista) {
-            System.out.println(numero);
-        }
-
-    }
 
 }
